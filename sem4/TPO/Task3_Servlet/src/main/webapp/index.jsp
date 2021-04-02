@@ -2,12 +2,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+    <title>TPO Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles/style.css" />
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<center><h2>Add 2 numbers</h2></center>
+
+<form action="add-servlet">
+    <table>
+        <tr>
+            <td>number#1 :</td>
+            <td><input type="text" name="number1"/></td>
+        </tr>
+        <tr>
+            <td>number#2 :</td>
+            <td><input type="text" name="number2"/></td>
+        </tr>
+
+    </table>
+    <div>
+        <input type="submit" value="POST" formmethod="post" name="find"/>
+        <input type="submit" value="GET" formmethod="get" name="find"/>
+        <input type="reset" value="Reset" name="reset" />
+    </div>
+    <h2>${result}</h2>
+</form>
 </body>
 </html>
