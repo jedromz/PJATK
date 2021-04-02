@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Helvetica;
+}
+form {
+    display: inline-block;
+}
+th{
+    padding: 1px;
+}
