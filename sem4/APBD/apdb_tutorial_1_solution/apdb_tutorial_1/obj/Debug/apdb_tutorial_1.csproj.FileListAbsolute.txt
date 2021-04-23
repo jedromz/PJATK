@@ -1,0 +1,6 @@
+/Users/jedrzejromankiewicz/Desktop/PJATK/semestr4/APBD/Tutorial1/tutorial-1-s21088jr/apdb_tutorial_1_solution/apdb_tutorial_1/bin/Debug/apdb_tutorial_1.exe
+/Users/jedrzejromankiewicz/Desktop/PJATK/semestr4/APBD/Tutorial1/tutorial-1-s21088jr/apdb_tutorial_1_solution/apdb_tutorial_1/bin/Debug/apdb_tutorial_1.pdb
+/Users/jedrzejromankiewicz/Desktop/PJATK/semestr4/APBD/Tutorial1/tutorial-1-s21088jr/apdb_tutorial_1_solution/apdb_tutorial_1/obj/Debug/apdb_tutorial_1.csprojAssemblyReference.cache
+/Users/jedrzejromankiewicz/Desktop/PJATK/semestr4/APBD/Tutorial1/tutorial-1-s21088jr/apdb_tutorial_1_solution/apdb_tutorial_1/obj/Debug/apdb_tutorial_1.csproj.CoreCompileInputs.cache
+/Users/jedrzejromankiewicz/Desktop/PJATK/semestr4/APBD/Tutorial1/tutorial-1-s21088jr/apdb_tutorial_1_solution/apdb_tutorial_1/obj/Debug/apdb_tutorial_1.exe
+/Users/jedrzejromankiewicz/Desktop/PJATK/semestr4/APBD/Tutorial1/tutorial-1-s21088jr/apdb_tutorial_1_solution/apdb_tutorial_1/obj/Debug/apdb_tutorial_1.pdb

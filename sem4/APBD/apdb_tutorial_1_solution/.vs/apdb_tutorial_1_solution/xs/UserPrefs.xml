@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{0EEF88D5-B46A-434A-8FC9-5AD76A7443B2}|Default">
+  <MonoDevelop.Ide.ItemProperties.apdb__tutorial__1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="apdb_tutorial_1/Program.cs">
+    <Files>
+      <File FileName="apdb_tutorial_1/Program.cs" Line="20" Column="82" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="apdb_tutorial_1_solution" expanded="True">
+            <Node name="apdb_tutorial_1" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

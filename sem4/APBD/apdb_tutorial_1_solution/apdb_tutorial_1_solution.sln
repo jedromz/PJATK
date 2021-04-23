@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apdb_tutorial_1", "apdb_tutorial_1\apdb_tutorial_1.csproj", "{0EEF88D5-B46A-434A-8FC9-5AD76A7443B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EEF88D5-B46A-434A-8FC9-5AD76A7443B2}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{0EEF88D5-B46A-434A-8FC9-5AD76A7443B2}.Debug|anycpu.Build.0 = Debug|anycpu
+		{0EEF88D5-B46A-434A-8FC9-5AD76A7443B2}.Release|anycpu.ActiveCfg = Release|anycpu
+		{0EEF88D5-B46A-434A-8FC9-5AD76A7443B2}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4960B022-F19E-46A6-9A0C-F6845BBF828F}
+	EndGlobalSection
+EndGlobal
