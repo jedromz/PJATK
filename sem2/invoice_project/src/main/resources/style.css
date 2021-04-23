@@ -1,0 +1,86 @@
+#mainPane{
+    -fx-background-color:#edf2f5;
+}
+#toppane {
+    -fx-background-color: #114ced;
+    -fx-background-radius: 20;
+}
+.topButtons{
+    -fx-background-color: #0A38ED;
+    -fx-background-radius: 100;
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 15px;
+}
+#addRow{
+    -fx-background-color: #114ced;
+    -fx-background-radius: 0px 0px 20px 20px;
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 15px;
+}
+.invoiceButton{
+    -fx-background-color: #114ced;
+    -fx-background-radius: 0px 0px 20px 20px;
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 15px;
+}
+
+.topButtons:focused{
+    -fx-background-color: white;
+    -fx-background-radius: 100;
+    -fx-text-fill: #0A38ED;
+    -fx-font-family: Orkney;
+    -fx-font-size: 15px;
+}
+#topMenu{
+    -fx-background-color: #0A38ED;
+    -fx-background-radius: 100;
+}
+.mylabel{
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 25px;
+}
+.head1{
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 18px;
+}
+.head1blue{
+    -fx-text-fill: #114CED;
+    -fx-font-family: Orkney;
+    -fx-font-size: 28px;
+}
+.head2{
+    -fx-text-fill: black;
+    -fx-font-family: Orkney;
+    -fx-font-size: 18px;
+}
+.title1{
+    -fx-text-fill: black;
+    -fx-font-family: Orkney;
+    -fx-font-size: 30px;
+}
+#detailsPane{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+}
+.editButton{
+    -fx-background-color: #114ced;
+    -fx-background-radius: 100;
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 15px;
+}
+.tableViewInvoice{
+    -fx-font-size: 10px;
+}
+#deleteButton{
+    -fx-background-color: red;
+    -fx-background-radius: 0px 0px 20px 20px;
+    -fx-text-fill: white;
+    -fx-font-family: Orkney;
+    -fx-font-size: 15px;
+}

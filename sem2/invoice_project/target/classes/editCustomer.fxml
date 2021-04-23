@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myInvoices.EditCustomerController">
+    <children>
+        <AnchorPane fx:id="detailsPane" layoutX="15.0" layoutY="-25.0" prefHeight="406.0" prefWidth="571.0">
+            <children>
+                <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="68.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutY="20.0" prefHeight="68.0" prefWidth="392.0" styleClass="head1blue" text="Customer Details" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="15.0" layoutY="116.0" prefHeight="250.0" prefWidth="541.0">
+                    <children>
+                        <VBox prefHeight="250.0" prefWidth="541.0" styleClass="head2">
+                            <children>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Label  prefHeight="76.0" prefWidth="181.0" text="Name" />
+                                        <JFXTextField fx:id="customerName" prefHeight="44.0" prefWidth="253.0" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Label prefHeight="76.0" prefWidth="181.0" text="NIP" />
+                                        <JFXTextField fx:id="customerNip" prefHeight="42.0" prefWidth="253.0" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Label prefHeight="76.0" prefWidth="181.0" text="Address" />
+                                        <JFXTextField fx:id="customerAddress" prefHeight="41.0" prefWidth="253.0" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Label prefHeight="76.0" prefWidth="181.0" text="Country" />
+                                        <JFXTextField fx:id="customerCountry" prefHeight="41.0" prefWidth="253.0" />
+                                    </children>
+                                </HBox>
+
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

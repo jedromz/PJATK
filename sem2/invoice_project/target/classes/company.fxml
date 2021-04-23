@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myInvoices.CompanyController">
+   <children>
+      <AnchorPane fx:id="toppane" layoutY="-19.0" prefHeight="299.0" prefWidth="1024.0" AnchorPane.bottomAnchor="488.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-19.0">
+         <children>
+            <VBox layoutX="55.0" layoutY="53.0" prefHeight="133.0" prefWidth="720.0" spacing="10.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="53.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="213.0" styleClass="mylabel" text="Your Company" />
+                  <HBox fx:id="topMenu" prefHeight="33.0" prefWidth="331.0">
+                     <children>
+                        <JFXButton fx:id="goToCompany" prefHeight="33.0" prefWidth="180.0" styleClass="topButtons" text="Company" />
+                        <JFXButton fx:id="goToCustomer" onAction="#changeToCustomer" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Customer" />
+                        <JFXButton fx:id="goToInvoice" onAction="#changeToInvoice" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Invoice" />
+                        <JFXButton fx:id="goToSummary" onAction="#changeToSummary" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Summary" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+             <Label layoutX="55.0" layoutY="204.0" prefHeight="17.0" prefWidth="383.0" styleClass="head1" text="Details of your company" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="586.0" AnchorPane.topAnchor="204.0" />
+         </children></AnchorPane>
+       <AnchorPane fx:id="detailsPane" layoutX="48.0" layoutY="229.0" prefHeight="514.0" prefWidth="937.0">
+           <children>
+               <VBox layoutX="14.0" layoutY="14.0" prefHeight="481.0" prefWidth="600.0">
+                   <children>
+                       <Label fx:id="compName" prefHeight="109.0" prefWidth="437.0" styleClass="title1" text="Company Name" />
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label prefHeight="106.0" prefWidth="176.0" styleClass="head2" text="NIP" />
+                               <Label fx:id="compNip" prefHeight="115.0" prefWidth="162.0" styleClass="head2" text="To Fill"/>
+                           </children>
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label prefHeight="106.0" prefWidth="176.0" styleClass="head2" text="Address" />
+                               <Label  fx:id="compAddress" prefHeight="94.0" prefWidth="410.0" styleClass="head2" text="To Fill"/>
+                           </children>
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label prefHeight="106.0" prefWidth="176.0" styleClass="head2" text="Country" />
+                               <Label fx:id="compCountry" prefHeight="95.0" prefWidth="222.0" styleClass="head2"  text="To Fill"/>
+                           </children>
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label  prefHeight="106.0" prefWidth="176.0" styleClass="head2" text="Bank Acc" />
+                               <Label fx:id="compBankAcc" prefHeight="115.0" prefWidth="162.0" styleClass="head2" text="To Fill" />
+                           </children>
+                       </HBox>
+                   </children>
+               </VBox>
+               <AnchorPane layoutX="715.0" layoutY="17.0" prefHeight="103.0" prefWidth="200.0">
+                   <children>
+                       <JFXButton fx:id="editCompanyButton" layoutX="50.0" layoutY="27.0" prefHeight="50" prefWidth="100" styleClass="editButton" text="Edit" />
+                   </children>
+            </AnchorPane>
+            <ImageView fx:id="companyImg" fitHeight="200.0" fitWidth="200.0" layoutX="715.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="715.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="255.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

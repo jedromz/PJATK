@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myInvoices.InvoiceController">
+    <children>
+        <AnchorPane fx:id="toppane" layoutY="-19.0" prefHeight="299.0" prefWidth="1024.0" AnchorPane.bottomAnchor="488.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-19.0">
+            <children>
+                <VBox layoutX="55.0" layoutY="53.0" prefHeight="133.0" prefWidth="720.0" spacing="10.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="53.0">
+                    <children>
+                        <Label prefHeight="54.0" prefWidth="213.0" styleClass="mylabel" text="Invoice" />
+                        <HBox fx:id="topMenu" prefHeight="33.0" prefWidth="331.0">
+                            <children>
+                                <JFXButton fx:id="goToCompany" onAction="#changeToCompany" prefHeight="33.0" prefWidth="180.0" styleClass="topButtons" text="Company" />
+                                <JFXButton fx:id="goToCustomer" onAction="#changeToCustomer" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Customer" />
+                                <JFXButton fx:id="goToInvoice" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Invoice" />
+                                <JFXButton fx:id="goToSummary" onAction="#changeToSummary" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Summary" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Label layoutX="55.0" layoutY="204.0" prefHeight="17.0" prefWidth="313.0" styleClass="head1" text="Add items to your invoice" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="656.0" AnchorPane.topAnchor="204.0" />
+            </children></AnchorPane>
+        <AnchorPane fx:id="detailsPane" layoutX="48.0" layoutY="229.0" prefHeight="514.0" prefWidth="937.0" AnchorPane.leftAnchor="55.0">
+            <children>
+                <VBox layoutX="14.0" prefHeight="481.0" prefWidth="670.0">
+                    <children>
+                        <Label prefHeight="109.0" prefWidth="238.0" styleClass="title1" text="Invoice No #1111" />
+                  <AnchorPane prefHeight="49.0" prefWidth="670.0">
+                     <children>
+                        <HBox layoutX="-1.0" layoutY="-2.0" prefHeight="54.0" prefWidth="489.0" spacing="10.0">
+                           <children>
+                              <JFXButton fx:id="savetoFile" onAction="#onSaveToFile" prefHeight="41.0" prefWidth="138.0" styleClass="editButton" text="Save To File" />
+                              <JFXButton fx:id="readFromfile" onAction="#onReadFromFile" prefHeight="41.0" prefWidth="199.0" styleClass="editButton" text="Read From FIle" />
+                              <JFXTextField fx:id="filePathTextField" prefHeight="28.0" prefWidth="176.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="invoiceItemTableView" prefHeight="372.0" prefWidth="670.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <HBox prefHeight="33.0" prefWidth="670.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="itemName" prefHeight="27.0" prefWidth="167.0" />
+                        <TextField fx:id="itemQuantity" prefWidth="167.0" />
+                        <TextField fx:id="itemPricePerUnit" prefWidth="167.0" />
+                        <TextField fx:id="itemVat" prefHeight="27.0" prefWidth="167.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="670.0">
+                     <children>
+                        <JFXButton fx:id="addRow" onAction="#addRowToTableView" prefHeight="27.0" prefWidth="395.0" text="Add row +" />
+                        <JFXButton fx:id="addRow1" onAction="#onSaveButton" prefHeight="27.0" prefWidth="216.0" styleClass="invoiceButton" text="Save">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin></JFXButton>
+                        <JFXButton fx:id="deleteButton" onAction="#deleteSelectedRow" prefHeight="27.0" prefWidth="218.0" text="Delete" />
+                     </children>
+                  </HBox>
+                    </children>
+                </VBox>
+            <AnchorPane layoutX="709.0" layoutY="94.0" prefHeight="161.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="155.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="54.0" prefWidth="200.0" styleClass="head2" text="Date of Issue" />
+                        <DatePicker fx:id="issueDatePicker" prefHeight="27.0" prefWidth="199.0" />
+                        <Label prefHeight="54.0" prefWidth="200.0" styleClass="head2" text="Payment Due" />
+                        <DatePicker fx:id="paymentDatePicker" prefHeight="27.0" prefWidth="199.0" />
+                        <Label prefHeight="54.0" prefWidth="200.0" styleClass="head2" text="Type Of Payment" />
+                        <JFXComboBox fx:id="formOfPayment" onAction="#onComboBoxSelected" prefHeight="27.0" prefWidth="204.0" />
+                        <Label prefHeight="54.0" prefWidth="200.0" styleClass="head2" text="Default Tax Rate" />
+                        <JFXTextField fx:id="defaultTaxRate" prefHeight="27.0" prefWidth="200.0">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

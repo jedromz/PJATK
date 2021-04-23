@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myInvoices.SummaryController">
+    <children>
+        <AnchorPane fx:id="toppane" layoutY="-19.0" prefHeight="299.0" prefWidth="1024.0" AnchorPane.bottomAnchor="488.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-19.0">
+            <children>
+                <VBox layoutX="55.0" layoutY="53.0" prefHeight="133.0" prefWidth="720.0" spacing="10.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="53.0">
+                    <children>
+                        <Label prefHeight="54.0" prefWidth="213.0" styleClass="mylabel" text="Summary" />
+                        <HBox fx:id="topMenu" prefHeight="33.0" prefWidth="331.0">
+                            <children>
+                                <JFXButton fx:id="goToCompany" onAction="#changeToCompany" prefHeight="33.0" prefWidth="180.0" styleClass="topButtons" text="Company" />
+                                <JFXButton fx:id="goToCustomer" onAction="#changeToCustomer" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Customer" />
+                                <JFXButton fx:id="goToInvoice" onAction="#changeToInvoice" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Invoice" />
+                                <JFXButton fx:id="goToSummary" prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Summary" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Label layoutX="55.0" layoutY="204.0" prefHeight="17.0" prefWidth="295.0" styleClass="head1" text="All costs wrapped up" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="674.0" AnchorPane.topAnchor="204.0" />
+            <AnchorPane layoutX="801.0" layoutY="111.0" prefHeight="77.0" prefWidth="200.0" />
+            </children></AnchorPane>
+        <AnchorPane fx:id="detailsPane" layoutX="48.0" layoutY="229.0" prefHeight="515.0" prefWidth="916.0">
+            <children>
+                <VBox layoutX="14.0" layoutY="14.0" prefHeight="481.0" prefWidth="420.0">
+                    <children>
+                        <Label prefHeight="109.0" prefWidth="437.0" styleClass="title1" text="Summary of your invoice" />
+                        <HBox prefHeight="94.0" prefWidth="289.0">
+                            <children>
+                                <Label prefHeight="85.0" prefWidth="176.0" styleClass="head2" text="Total Cost" />
+                                <Label fx:id="totalCost" prefHeight="85.0" prefWidth="162.0" styleClass="head2" text="TBC" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label prefHeight="85.0" prefWidth="176.0" styleClass="head2" text="Total VAT" />
+                                <Label fx:id="totalVat" prefHeight="85.0" prefWidth="241.0" styleClass="head2" text="TBC" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label prefHeight="85.0" prefWidth="176.0" styleClass="head2" text="Form of Payment" />
+                                <Label fx:id="paymentMethod" prefHeight="85.0" prefWidth="222.0" styleClass="head2" text="TBD" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label prefHeight="85.0" prefWidth="176.0" styleClass="head2" text="Paymend Due" />
+                                <Label fx:id="paymentDue" prefHeight="85.0" prefWidth="162.0" styleClass="head2" text="TBD" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            <VBox layoutX="377.0" layoutY="122.0" prefHeight="393.0" prefWidth="281.0">
+               <children>
+                  <Label fx:id="companyName" prefHeight="85.0" prefWidth="291.0" styleClass="title1" text="Company" />
+                  <HBox prefHeight="94.0" prefWidth="289.0">
+                     <children>
+                        <Label fx:id="companyNIP" prefHeight="85.0" prefWidth="304.0" styleClass="head2" text="NIP" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="96.0" prefWidth="208.0">
+                     <children>
+                        <Label fx:id="companyAddress" prefHeight="85.0" prefWidth="298.0" styleClass="head2" text="Address" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="companyCountry" prefHeight="85.0" prefWidth="466.0" styleClass="head2" text="Country" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="companyBankAcc" prefHeight="85.0" prefWidth="612.0" styleClass="head2" text="Bank Acc" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="684.0" layoutY="122.0" prefHeight="393.0" prefWidth="258.0">
+               <children>
+                  <Label fx:id="customerName" prefHeight="85.0" prefWidth="258.0" styleClass="title1" text="Customer" />
+                  <HBox prefHeight="94.0" prefWidth="289.0">
+                     <children>
+                        <Label fx:id="customerNIP" prefHeight="85.0" prefWidth="446.0" styleClass="head2" text="NIP" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="96.0" prefWidth="208.0">
+                     <children>
+                        <Label fx:id="customerAddress" prefHeight="85.0" prefWidth="436.0" styleClass="head2" text="Address" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="customerCountry" prefHeight="85.0" prefWidth="425.0" styleClass="head2" text="Country" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="companyAddress1" prefHeight="106.0" prefWidth="176.0" styleClass="head2" />
+
+               </children>
+            </VBox>
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

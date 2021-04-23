@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myInvoices.Controller">
+   <children>
+      <AnchorPane fx:id="toppane" layoutY="-19.0" prefHeight="299.0" prefWidth="1024.0">
+         <children>
+            <VBox layoutX="55.0" layoutY="53.0" prefHeight="133.0" prefWidth="720.0" spacing="10.0" AnchorPane.leftAnchor="55.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="213.0" text="Your Company" />
+                  <HBox fx:id="topMenu" prefHeight="33.0" prefWidth="331.0">
+                     <children>
+                        <JFXButton prefHeight="33.0" prefWidth="180.0" styleClass="topButtons" text="Company" />
+                        <JFXButton prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Customer" />
+                        <JFXButton prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Invoice" />
+                        <JFXButton prefHeight="66.0" prefWidth="180.0" styleClass="topButtons" text="Summary" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+             <Label layoutX="55.0" layoutY="204.0" styleClass="head1" text="Details of your company" />
+         </children></AnchorPane>
+       <AnchorPane fx:id="detailsPane" layoutX="48.0" layoutY="229.0" prefHeight="514.0" prefWidth="937.0">
+           <children>
+               <VBox layoutX="14.0" layoutY="14.0" prefHeight="481.0" prefWidth="600.0">
+                   <children>
+                       <Label styleClass="title1" prefHeight="109.0" prefWidth="437.0" text="Company Name"/>
+                       <HBox  prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label  styleClass="head2" prefHeight="106.0" prefWidth="176.0" text="NIP" />
+                               <Label styleClass="head2" prefHeight="115.0" prefWidth="162.0" text="111111111111" />
+                           </children>
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label styleClass="head2" prefHeight="106.0" prefWidth="176.0" text="Address" />
+                               <Label styleClass="head2" prefHeight="94.0" prefWidth="410.0" text="ul Sokolowska 9/106 Warszawa 01-142" />
+                           </children>
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label styleClass="head2" prefHeight="106.0" prefWidth="176.0" text="Country" />
+                               <Label styleClass="head2" prefHeight="95.0" prefWidth="222.0" text="Poland" />
+                           </children>
+                       </HBox>
+                       <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                               <Label styleClass="head2" prefHeight="106.0" prefWidth="176.0" text="Bank Acc" />
+                               <Label styleClass="head2" prefHeight="115.0" prefWidth="162.0" text="123432514352643" />
+                           </children>
+                       </HBox>
+                   </children>
+               </VBox>
+               <AnchorPane layoutX="715.0" layoutY="17.0" prefHeight="103.0" prefWidth="200.0">
+                   <children>
+                       <JFXButton styleClass="editButton" layoutX="50.0" layoutY="27.0" prefWidth="100" prefHeight="50" text="Edit" />
+                   </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
