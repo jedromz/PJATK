@@ -1,8 +1,0 @@
----Exception Details on  04/08/2021 10:39:36----
-Empty argument for property: System.String StudiesMode
----Exception Details on  04/08/2021 10:39:36----
-Empty argument for property: System.String StudiesMode
----Exception Details on  04/08/2021 10:39:36----
-Empty argument for property: System.String LastName
----Exception Details on  04/08/2021 10:39:36----
-Empty argument for property: System.String MothersName
